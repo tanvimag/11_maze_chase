@@ -47,3 +47,22 @@ def bfs(walls, start, goal, rows, cols):
                     visited.add((nr,nc))
                     queue.append((nr,nc,path+[(dr,dc)]))
     return None
+
+
+WALL_THICKNESS = 4
+
+def build_wall_rects(walls, rows, cols):
+    """Convert the wall grid into pygame Rects so entities can collide with walls.
+    Each wall line drawn in the game gets a thin rect centred on that line."""
+    import pygame
+    t = WALL_THICKNESS
+    rects = []
+    for r in range(rows):
+        for c in range(cols):
+            x, y = c * CELL, r * CELL
+            w = walls[r][c]
+            if w[0]: rects.append(pygame.Rect(x - t // 2, y - t // 2, CELL + t, t))          # top
+            if w[1]: rects.append(pygame.Rect(x - t // 2, y + CELL - t // 2, CELL + t, t))  # bottom
+            if w[2]: rects.append(pygame.Rect(x + CELL - t // 2, y - t // 2, t, CELL + t))  # right
+            if w[3]: rects.append(pygame.Rect(x - t // 2, y - t // 2, t, CELL + t))          # left
+    return rects
