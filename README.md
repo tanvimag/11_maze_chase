@@ -66,10 +66,10 @@ maze-chase/
 
 ## Submission Checklist
 
-- [ ] All 4 tasks completed
-- [ ] Multiple enemies work independently
-- [ ] Power pellet freezes enemy correctly
-- [ ] Speed ramp increases difficulty over time
-- [ ] Code reviewed with LLM (include chat link)
+- [x] All 4 tasks completed
+- [x] Multiple enemies work independently
+- [x] Power pellet freezes enemy correctly
+- [x] Speed ramp increases difficulty over time
+- [x] Code reviewed with LLM (include chat link)
 
 LLM chat link: https://claude.ai/share/53d4bc8c-a7a8-4d77-90de-4d941bcdd1a0
