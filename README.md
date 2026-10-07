@@ -71,3 +71,5 @@ maze-chase/
 - [ ] Power pellet freezes enemy correctly
 - [ ] Speed ramp increases difficulty over time
 - [ ] Code reviewed with LLM (include chat link)
+
+LLM chat link: https://claude.ai/share/53d4bc8c-a7a8-4d77-90de-4d941bcdd1a0
